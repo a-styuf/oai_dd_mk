@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"oai_dd_mk\startup_stm32f105xc.o"
+"oai_dd_mk\main.o"
+"oai_dd_mk\stm32f1xx_it.o"
+"oai_dd_mk\stm32f1xx_hal_msp.o"
+"oai_dd_mk\stm32f1xx_hal_gpio_ex.o"
+"oai_dd_mk\stm32f1xx_hal_adc.o"
+"oai_dd_mk\stm32f1xx_hal_adc_ex.o"
+"oai_dd_mk\stm32f1xx_hal_dac.o"
+"oai_dd_mk\stm32f1xx_hal_dac_ex.o"
+"oai_dd_mk\stm32f1xx_hal_tim.o"
+"oai_dd_mk\stm32f1xx_hal_tim_ex.o"
+"oai_dd_mk\stm32f1xx_hal_uart.o"
+"oai_dd_mk\stm32f1xx_hal.o"
+"oai_dd_mk\stm32f1xx_hal_rcc.o"
+"oai_dd_mk\stm32f1xx_hal_rcc_ex.o"
+"oai_dd_mk\stm32f1xx_hal_gpio.o"
+"oai_dd_mk\stm32f1xx_hal_dma.o"
+"oai_dd_mk\stm32f1xx_hal_cortex.o"
+"oai_dd_mk\stm32f1xx_hal_pwr.o"
+"oai_dd_mk\stm32f1xx_hal_flash.o"
+"oai_dd_mk\stm32f1xx_hal_flash_ex.o"
+"oai_dd_mk\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "oai_dd_mk\oai_dd_mk.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "oai_dd_mk.map" -o oai_dd_mk\oai_dd_mk.axf
